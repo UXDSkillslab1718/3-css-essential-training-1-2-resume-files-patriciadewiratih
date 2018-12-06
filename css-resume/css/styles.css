@@ -1,3 +1,40 @@
+/* color pallete
+red #721817
+yellow #FA9F42
+blue #2B4162
+green #0B6E4F
+gray #E0E0E2 */
+
+/* Global style */
 body {
-    background: lightgrey;
+   
+}
+a{
+    color: #FA9F42;
+}
+a:hover{
+    text-decoration: none;
+}
+/* header and footer */
+header, footer {
+    background: #721817;
+    color: #E0E0E2;
+}
+header h1, header h2 {
+    color: white; 
+}
+
+/* work */
+.work {
+    background: #FA9F42;
+}
+
+/* volunteer */
+.volunteer{
+    background: #2B4162;
+}
+
+/* education */
+.education{
+    background: #0B6E4F;
 }
