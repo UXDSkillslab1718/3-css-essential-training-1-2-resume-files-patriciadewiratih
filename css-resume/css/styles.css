@@ -6,15 +6,38 @@ green #0B6E4F
 gray #E0E0E2 */
 
 /* Global style */
+/* 1em = 16px */
 body {
-   
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
+
+h1,h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1em;
+}
+
+
 a{
     color: #FA9F42;
 }
+
 a:hover{
     text-decoration: none;
 }
+
 /* header and footer */
 header, footer {
     background: #721817;
