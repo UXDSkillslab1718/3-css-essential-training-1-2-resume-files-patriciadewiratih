@@ -40,16 +40,17 @@ h1{
 
 h2{
     font-size: 2em;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
 }
 
-section h3{
+h3{
+    margin:0;
     font-weight: 400;
     font-size: 1.5em;
 }
 
 p{
-    padding-bottom: 1em;
+    margin:0;
 }
 
 a{
@@ -70,14 +71,16 @@ a:hover{
 .col-narrow{
     width: 30%;
     float: left;
-    min-height: 175px;
 }
 
 .col-wide{
     width: 70%;
     float: left;
     padding-left: 2.5em;
-    min-height: 175px;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
 
 /* header and footer */
@@ -108,6 +111,17 @@ footer{
 .work {
     background: #FA9F42;
 }
+h3 ~ p {
+    margin: 0;
+}
+
+.job-description{
+    margin-bottom: 1.5em; 
+}
+
+.job-description p:first-of-type{
+    margin-top: 0;
+}
 
 /* volunteer */
 .volunteer{
@@ -117,6 +131,9 @@ footer{
 /* education */
 .education{
     background: #0B6E4F;
+}
+p + h3 {
+    margin-top: 1em;
 }
 
 .contact a{
