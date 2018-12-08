@@ -5,30 +5,52 @@ blue #2B4162
 green #0B6E4F
 gray #E0E0E2 */
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 /* Global style */
 /* 1em = 16px */
 body {
+    text-align: justify;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 1.25em;
+    display: inline;
+    margin:0;
 }
 
-h1,h2 {
+h1, h2, h3, p {
+    margin:0;
+}
+
+h1, header h2 {
+    text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 h1{
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h2{
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+section h3{
+    font-weight: 400;
     font-size: 1.5em;
 }
 
-h3{
-    font-size: 1em;
+p{
+    padding-bottom: 1em;
 }
-
 
 a{
     color: #FA9F42;
@@ -38,13 +60,48 @@ a:hover{
     text-decoration: none;
 }
 
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 5em;
+    overflow:hidden;
+}
+
+.col-narrow{
+    width: 30%;
+    float: left;
+    min-height: 175px;
+}
+
+.col-wide{
+    width: 70%;
+    float: left;
+    padding-left: 2.5em;
+    min-height: 175px;
+}
+
 /* header and footer */
 header, footer {
     background: #721817;
     color: #E0E0E2;
 }
+
+/* header */
 header h1, header h2 {
     color: white; 
+}
+
+.profile-img{
+    border-radius: 45%;
+
+}
+
+header{
+    text-align: justify;
+}
+/* footer */
+footer{
+    text-align: center;
 }
 
 /* work */
@@ -60,4 +117,10 @@ header h1, header h2 {
 /* education */
 .education{
     background: #0B6E4F;
+}
+
+.contact a{
+    margin:10px;
+    padding: 5px;
+    display: inline-block;
 }
