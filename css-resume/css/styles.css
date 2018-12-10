@@ -14,7 +14,6 @@ html {
   }
 
 /* Global style */
-/* 1em = 16px */
 body {
     text-align: justify;
     font-family: 'Roboto', sans-serif;
@@ -64,7 +63,7 @@ a:hover{
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
-    padding: 5em;
+    padding: 6em 5em;
     overflow:hidden;
 }
 
@@ -83,6 +82,14 @@ a:hover{
     text-transform: uppercase;
 }
 
+.btn {
+    text-decoration: none;
+    background: #721817;
+    color: #FA9F42;
+    padding: 1em;
+    display: inline-block;
+}
+
 /* header and footer */
 header, footer {
     background: #721817;
@@ -96,18 +103,43 @@ header h1, header h2 {
 
 .profile-img{
     border-radius: 45%;
+}
 
+.download{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 header{
     text-align: justify;
+    padding-top: 3em;
+    position: relative;
+
 }
 /* footer */
 footer{
     text-align: center;
 }
 
-/* work */
+/* Navigation */
+nav{
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} 
+
+nav a{
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* work experience*/
 .work {
     background: #FA9F42;
 }
