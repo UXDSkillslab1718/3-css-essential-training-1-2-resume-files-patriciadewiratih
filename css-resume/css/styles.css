@@ -162,7 +162,8 @@ h3 ~ p {
 
 /* education */
 .education{
-    background: #0B6E4F;
+    background: linear-gradient(rgba(11, 110, 79, 0.8), rgba(11, 110, 79, 0.5)), url(https://cdn.thecrazytourist.com/wp-content/uploads/2017/07/Mount-Bromo.jpg) no-repeat fixed;
+    background-size: cover;
 }
 p + h3 {
     margin-top: 1em;
