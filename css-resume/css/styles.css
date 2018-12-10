@@ -37,6 +37,10 @@ h1{
     font-size: 3em;
 }
 
+section h2 {
+    text-align: left;
+}
+
 h2{
     font-size: 2em;
     padding-bottom: 1em;
@@ -46,6 +50,7 @@ h3{
     margin:0;
     font-weight: 400;
     font-size: 1.5em;
+    text-align: left;
 }
 
 p{
@@ -61,21 +66,10 @@ a:hover{
 }
 
 .content-wrap {
-    max-width: 950px;
+    max-width: 1040px;
     margin: 0 auto;
     padding: 6em 5em;
     overflow:hidden;
-}
-
-.col-narrow{
-    width: 30%;
-    float: left;
-}
-
-.col-wide{
-    width: 70%;
-    float: left;
-    padding-left: 2.5em;
 }
 
 .uppercase{
@@ -112,7 +106,6 @@ header h1, header h2 {
 }
 
 header{
-    text-align: justify;
     padding-top: 3em;
     position: relative;
 
@@ -133,7 +126,7 @@ nav{
 
 nav a{
     display: inline-block;
-    padding: 1em 1.5em;
+    padding: 1em 0.5em;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -174,3 +167,26 @@ p + h3 {
     padding: 5px;
     display: inline-block;
 }
+
+
+/* media queries */
+@media (min-width: 900px) {
+    .col-narrow{
+        width: 30%;
+        float: left;
+    }
+    
+    .col-wide{
+        width: 70%;
+        float: left;
+        padding-left: 2.5em;
+    }
+}
+    @media(max-width: 899px){
+        header{
+            text-align: center;
+        }
+        .profile-img{
+            width: 300px;
+        }
+    }
